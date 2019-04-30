@@ -33,11 +33,9 @@ Where
 
 Your toy weather simulation should report data from a reasonable number of positions; 10±. 
 
-The weather simulation will be used for games and does not need to be meteorically accurate, 
-it just needs to be emit weather data that looks plausible to a layperson.
+The weather simulation will be used for games and does not need to be meteorically accurate, it just needs to be emit weather data that looks plausible to a layperson.
 
-So far we have assumed that our game takes place on Earth, 
-leading to the use of latitude and longitude for co-ordinates and earth-like conditions. 
+So far we have assumed that our game takes place on Earth, leading to the use of latitude and longitude for co-ordinates and earth-like conditions. 
 
 If you choose to assume that the game takes place elsewhere, please document any corresponding changes to the output format.
 
@@ -54,7 +52,8 @@ etl {
   publisher_file_path = "src/main/resources/weather_report.txt"
 }
 ```
-extractor_file_path : input file path publisher_file_path : output file path
+extractor_file_path : input file path 
+publisher_file_path : output file path
 
 Both paths should be configured with relative paths
 
