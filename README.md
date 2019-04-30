@@ -55,6 +55,7 @@ etl {
 }
 ```
 extractor_file_path : input file path publisher_file_path : output file path
+
 Both paths should be configured with relative paths
 
 ## Input File Format
