@@ -44,3 +44,24 @@ If you choose to assume that the game takes place elsewhere, please document any
 ## How to run the program 
 
     java -jar weather_simulator.jar
+    
+## Configuration
+The module expecting a configuration file with name application.conf in class path with following format
+
+```
+etl {
+  extractor_file_path = "src/main/resources/World_Cities_Location_table_MS-EXCEL.csv"
+  publisher_file_path = "src/main/resources/weather_report.txt"
+}
+```
+extractor_file_path : input file path publisher_file_path : output file path
+Both paths should be configured with relative paths
+
+## Input File Format
+The input file should have comma separated values as mentioned below
+
+```
+"id","country","city","lattitude","longitude","altitude"
+```
+
+Ex: "1","Afghanistan","Kabul","34.5166667","69.1833344","1808.0"
