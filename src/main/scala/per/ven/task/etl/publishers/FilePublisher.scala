@@ -32,7 +32,7 @@ class FilePublisher(path: String) extends Publisher with LazyLogging {
 
     s"${weatherReport.cityGeoData.name}" +
       s"|${weatherReport.cityGeoData.latitude},${weatherReport.cityGeoData.longitude},${weatherReport.cityGeoData.altitude.toInt}" +
-      s"|${weatherReport.localTime}" +
+      s"|${DateTimeFormatter.ISO_INSTANT.format(weatherReport.localTime.toInstant(ZoneOffset.UTC))}" +
       s"|${weatherReport.conditions}" +
       f"|${weatherReport.temperature}%+.1f" +
       f"|${weatherReport.pressure}%.1f" +
