@@ -65,3 +65,29 @@ The input file should have comma separated values as mentioned below
 ```
 
 Ex: "1","Afghanistan","Kabul","34.5166667","69.1833344","1808.0"
+
+
+## Models
+### Axil Tilt Model
+In astronomy, axial tilt, also known as obliquity, is the angle between an object's rotational axis and its orbital axis, or, equivalently, the angle between its equatorial plane and orbital plane. It differs from orbital inclination.
+
+At an obliquity of zero, the two axes point in the same direction; i.e., the rotational axis is perpendicular to the orbital plane. Over the course of an orbit, the obliquity usually does not change considerably, and the orientation of the axis remains the same relative to the background stars. This causes one pole to be directed more toward the Sun on one side of the orbit, and the other pole on the other side — the cause of the seasons on the Earth. Earth's obliquity oscillates between 22.1 and 24.5 degrees on a 41,000-year cycle. It is currently 23°26′13.5″ (or 23.43709°) and decreasing.
+
+### Temperature Model
+tl = range of temperatures related to latitude [max, min] sh = solar hour. max at noon, min at midnight. alt = altitude in meters
+
+    temp = t1 * sh * alt
+    
+### Humidity Model
+hl = humidity related to latitude
+
+If rain forest:
+
+    humidity = hl * 1.5
+
+If desert:
+
+    humidity = hl * 0.2
+    
+### Air Presure Model
+Uses the Barometric Formula
